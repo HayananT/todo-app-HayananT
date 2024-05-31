@@ -1,0 +1,53 @@
+/* Main content top */
+.main-content-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 52px;
+  padding: 15px; /* Adjust pthe height */
+  background-color: #ffffff; /* Background color for the top bar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Black shadow */
+}
+
+.content-top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Adjust the gap between items as needed */
+}
+
+.content-top-title {
+  color: #000000; /* Black color for the text */
+  font-size: 24px; /* Adjust the font size as needed */
+  margin: 0;
+  font-weight: 600; /* Bold text */
+}
+
+.sidebar-toggler {
+  display: flex;
+  align-items: center;
+  width: 50px; /* Adjust width as needed */
+  height: 50px; /* Adjust height as needed */
+  padding: 10px; /* Adjust padding as needed */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.sidebar-toggler img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content-top-right {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust the gap between icons as needed */
+  margin-left: auto; /* Pushes this section to the far right */
+}
+
+.content-top-right img {
+  width: 30px; /* Adjust the icon size as needed */
+  height: 30px; /* Adjust the icon size as needed */
+  cursor: pointer;
+}

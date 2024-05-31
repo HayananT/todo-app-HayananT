@@ -1,0 +1,139 @@
+.transactions-container {
+  padding: 20px;
+}
+
+.transaction-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Ensures fixed table layout */
+}
+
+.transaction-table th,
+.transaction-table td {
+  padding: 8px; /* Reduced padding to make cell height smaller */
+  border: 1px solid #dddddd;
+  text-align: left;
+  overflow: hidden; /* Ensures content does not overflow */
+  text-overflow: ellipsis; /* Adds ellipsis for overflow text */
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.transaction-table th {
+  background-color: #f2f2f2;
+}
+
+.transaction-table th:nth-child(1),
+.transaction-table td:nth-child(1) {
+  width: 80%; /* Increased width for To-Do column */
+}
+
+.transaction-table th:nth-child(2),
+.transaction-table td:nth-child(2) {
+  width: 10%; /* Smaller width for Status column */
+}
+
+.transaction-table th:nth-child(3),
+.transaction-table td:nth-child(3) {
+  width: 10%; /* Smaller width for Created At column */
+}
+
+.priority-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff; /* Inner border */
+  border-radius: 3px;
+  padding: 2px;
+  background-color: #ffffff; /* White background to ensure the border is visible */
+}
+
+.status-icon {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ffffff; /* Inner border */
+  border-radius: 3px;
+  padding: 2px;
+  background-color: #ffffff; /* White background to ensure the border is visible */
+}
+
+.status-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status.done .status-icon {
+  border-color: #2a662c; /* Green border */
+}
+
+.status.in-progress .status-icon {
+  border-color: #ffeb3b; /* Yellow border */
+}
+
+.todo-text {
+  margin-left: 10px; /* Adjust the margin to increase the space */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #e0e0e0;
+}
+
+.pagination button:focus {
+  outline: none;
+}
+
+.pagination .active {
+  background-color: #007bff;
+  color: #ffffff;
+}
+
+.pagination .arrow {
+  font-size: 18px;
+}
+
+/* Button Styles */
+.mark-done-button {
+  background-color: #4f1818e0;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 4px 8px; /* Adjusted padding for smaller size */
+  cursor: pointer;
+  transition: background-color 0.7s ease;
+  margin-top: 10px; /* Add space from the top */
+  margin-right: 30px; /* Add space from the right side */
+  margin-left: 10%; /* Add space from the left side */
+}
+
+.mark-done-button:hover {
+  background-color: #023c1a;
+}
+
+.mark-done-button:focus {
+  outline: none;
+}
+
+.mark-done-button:disabled {
+  background-color: #ced4da;
+  cursor: not-allowed;
+}
+
+.mark-done-button:disabled:hover {
+  background-color: #ced4da;
+}
